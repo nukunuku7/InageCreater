@@ -1,0 +1,14 @@
+.vscode/
+davenv/
+gallery-dl/
+dataset/
+models/sdxl/base/*.safetensors
+models/sdxl/controlnet/Canny/*.safetensors
+models/sdxl/controlnet/openpose/*.safetensors
+tag_maker/model/model-resnet_custom_v3.h5
+tag_maker/model/tags.txt
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+output/

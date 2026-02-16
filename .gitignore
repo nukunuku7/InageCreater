@@ -1,7 +1,8 @@
 .vscode/
 davenv/
 gallery-dl/
-dataset/
+dataset/maked_tags/*.json
+dataset/prompts/*.json
 models/sdxl/base/*.safetensors
 models/sdxl/controlnet/Canny/*.safetensors
 models/sdxl/controlnet/openpose/*.safetensors

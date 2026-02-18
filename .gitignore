@@ -12,4 +12,4 @@ tag_maker/model/tags.txt
 *.pt
 *.pth
 *.safetensors
-output/
+outputs/

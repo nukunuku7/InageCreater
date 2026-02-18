@@ -12,8 +12,8 @@ tag_maker/model/tags.txt
 *.pt
 *.pth
 *.safetensors
-outputs/*.png
-outputs/*.jpg
-outputs/*.jpeg
-outputs/*.webp
-outputs/*.bmp
+image_creater/outputs/*.png
+image_creater/outputs/*.jpg
+image_creater/outputs/*.jpeg
+image_creater/outputs/*.webp
+image_creater/outputs/*.bmp

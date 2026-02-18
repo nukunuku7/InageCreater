@@ -16,7 +16,7 @@
 推奨環境：
 
 - OS：Windows 10/11
-- Python：3.10 以上
+- Python：3.11 以上
 - GPU：NVIDIA推奨（VRAM 8GB以上）
 - CUDA：11.8以上推奨
 
@@ -25,7 +25,7 @@
 # 📂 フォルダ構造（変更禁止）
 
 このプロジェクトは以下の構造を前提としています。  
-**フォルダ名を変えると動作しません。**
+**動作条件があります。**
 
 ```
 
@@ -38,17 +38,17 @@ DEEPDANBOORU/
 │
 ├─ image_creater/
 │   ├─ models/sdxl/
-│   │   ├─ base/            # SDXLベースモデル
-│   │   │   └─ novaAnimeXL_ilv160.safetensors
+│   │   ├─ base/
+│   │   │   └─ novaAnimeXL_ilv160.safetensors # SDXLベースモデル
 │   │   │
 │   │   └─ controlnet/      # ControlNetモデル群
 │   │       ├─ Canny/
 │   │       │   ├─ config.json
-│   │       │   └─ diffusion_pytorch_model.safetensors
+│   │       │   └─ diffusion_pytorch_model.safetensors # 輪郭から推論する学習済みモデル
 │   │       │
 │   │       └─ openpose/
 │   │           ├─ config.json
-│   │           └─ diffusion_pytorch_model.safetensors
+│   │           └─ diffusion_pytorch_model.safetensors　# 骨格情報から推論する学習済みモデル 
 │   │
 │   ├─ outputs/             # 生成画像保存先
 │   │
@@ -57,7 +57,7 @@ DEEPDANBOORU/
 │
 ├─ tag_maker/
 │   ├─ model/               # DeepDanbooruモデル
-│   ├─ tags.txt
+│   ├─ tags.txt             # プロンプトタグのすべて
 │   └─ resnet.py
 │
 ├─ project/

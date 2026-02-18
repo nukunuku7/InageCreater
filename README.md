@@ -56,9 +56,10 @@ DEEPDANBOORU/
 │   └─ image_creater_GUI.py # GUI実行用
 │
 ├─ tag_maker/
-│   ├─ model/               # DeepDanbooruモデル
-│   ├─ tags.txt             # プロンプトタグのすべて
-│   └─ resnet.py
+│   └─ model/
+|       ├─ model-resnet_custom_v3.h5    # DeepDanbooruモデル
+│       ├─ tags.txt                     # プロンプトタグのすべて
+│       └─ resnet.py
 │
 ├─ project/
 │   ├─ make_prompt.py       # プロンプト生成スクリプト
@@ -79,8 +80,7 @@ DEEPDANBOORU/
 
 このプロジェクトでは以下を使用します：
 
-- `novaAnimeXL_ilv160.safetensors`
-[text](https://civitai.com/models/376130/nova-anime-xl?modelVersionId=2648201)
+- [novaAnimeXL_ilv160.safetensors (Civitai)](https://civitai.com/models/376130/nova-anime-xl?modelVersionId=2648201)
 
 配置場所：
 
@@ -100,8 +100,7 @@ ControlNetを使うので以下を配置してください。
 
 ### Canny
 
-以下のリンクの`diffusion_pytorch_model.safetensors`と`config.json`’（なければ）をダウンロードしてください。
-[text](https://huggingface.co/diffusers/controlnet-canny-sdxl-1.0/tree/main)
+以下のリンクの[diffusion_pytorch_model.safetensorsとconfig.json（なければ）](https://huggingface.co/diffusers/controlnet-canny-sdxl-1.0/tree/main)をダウンロードしてください。
 
 配置：
 
@@ -117,8 +116,7 @@ image_creater/models/sdxl/controlnet/Canny/
 
 ### OpenPose
 
-以下のリンクの`diffusion_pytorch_model.safetensors`と`config.json`’（なければ）をダウンロードしてください。
-[text](https://huggingface.co/xinsir/controlnet-openpose-sdxl-1.0/tree/main)
+以下のリンクの[diffusion_pytorch_model.safetensorsとconfig.json（なければ）](https://huggingface.co/xinsir/controlnet-openpose-sdxl-1.0/tree/main)をダウンロードしてください。
 
 配置：
 
@@ -136,31 +134,14 @@ image_creater/models/sdxl/controlnet/openpose/
 
 ---
 
-### タグ推論モデル
-
-以下のリンクをダウンロードください。そして、`model-resnet_custom_v3.h5`を指定の場所へ配置してください。
-[text](https://github.com/KichangKim/DeepDanbooru/releases/download/v3-20211112-sgd-e28/deepdanbooru-v3-20211112-sgd-e28.zip)
+以下のリンクをダウンロードください。そして、[model-resnet_custom_v3.h5とtags.txt](https://github.com/KichangKim/DeepDanbooru/releases/download/v3-20211112-sgd-e28/deepdanbooru-v3-20211112-sgd-e28.zip)を指定の場所へ配置してください。
 
 配置：
 
 ```
 
 tag_maker/model
-└─ model-resnet_custom_v3.h5
-
-```
-
----
-
-### タグリスト
-
-以下のリンクをダウンロードください。そして、`tags.txt`を指定の場所へ配置してください。
-[text](https://github.com/KichangKim/DeepDanbooru/releases/download/v3-20211112-sgd-e28/deepdanbooru-v3-20211112-sgd-e28.zip)
-
-配置：
-
-```
-tag_maker/model
+├─ model-resnet_custom_v3.h5
 └─ tags.txt
 
 ```

@@ -4,8 +4,8 @@ import json
 from pathlib import Path
 
 # ===== 設定 =====
-TAGS_JSON_DIR = Path("C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/dataset/maked_tags")  # タグJSONフォルダ
-PROMPTS_DIR = Path("C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/dataset/prompts")     # 出力プロンプトフォルダ
+TAGS_JSON_DIR = Path("C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/dataset/maked_tags")  # タグJSONフォルダ
+PROMPTS_DIR = Path("C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/dataset/prompts")     # 出力プロンプトフォルダ
 
 # SDXLのCLIP制限は77。SOS/EOSを除いた実質上限は75。
 # 安全のため、1チャンクあたりのトークン上限を 65 に設定します。

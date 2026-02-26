@@ -13,11 +13,11 @@ from diffusers import (
 
 # ===== 設定 =====
 BASE_MODEL_PATH = Path(
-    "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/image_creater/models/sdxl/base/novaAnimeXL_ilV160.safetensors"
+    "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/image_creater/models/sdxl/base/novaAnimeXL_ilV160.safetensors"
 ) # SDXL Baseモデルパス
 
 CONTROLNET_CANNY_PATH = Path(
-    "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/image_creater/models/sdxl/controlnet/Canny"
+    "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/image_creater/models/sdxl/controlnet/Canny"
 ) # ControlNet Cannyモデルパス
 
 IMAGE_DIR = Path(
@@ -25,11 +25,11 @@ IMAGE_DIR = Path(
 ) # 入力画像フォルダ
 
 PROMPTS_DIR = Path(
-    "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/dataset/prompts"
+    "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/dataset/prompts"
 ) # プロンプトJSONフォルダ
 
 OUTPUT_DIR = Path(
-    "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/image_creater/outputs"
+    "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/image_creater/outputs"
 ) # 出力画像フォルダ
 
 IMAGE_SIZE = 1024

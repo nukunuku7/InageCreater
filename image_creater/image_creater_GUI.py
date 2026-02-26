@@ -23,20 +23,20 @@ import gc
 
 # ===== 設定 (パスなどはそのまま維持) =====
 # SDXLベースモデル
-BASE_MODEL_PATH = "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/image_creater/models/sdxl/base/novaAnimeXL_ilV160.safetensors"
+BASE_MODEL_PATH = "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/image_creater/models/sdxl/base/novaAnimeXL_ilV160.safetensors"
 
 # ControlNetモデルのパス (CannyとOpenPose)
 CN_MODELS = {
-    "Canny (輪郭維持)": "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/image_creater/models/sdxl/controlnet/Canny",
-    "OpenPose (ポーズ維持)": "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/image_creater/models/sdxl/controlnet/openpose"
+    "Canny (輪郭維持)": "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/image_creater/models/sdxl/controlnet/Canny",
+    "OpenPose (ポーズ維持)": "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/image_creater/models/sdxl/controlnet/openpose"
 }
 
 # タグ推定モデルとタグリストのパス
-TAGGER_MODEL_PATH = "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/tag_maker/model/model-resnet_custom_v3.h5"
-TAGS_LIST_PATH = "C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/tag_maker/model/tags.txt"
+TAGGER_MODEL_PATH = "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/tag_maker/model/model-resnet_custom_v3.h5"
+TAGS_LIST_PATH = "C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/tag_maker/model/tags.txt"
 
 # 出力ディレクトリ
-OUTPUT_DIR = Path("C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/image_creater/outputs")
+OUTPUT_DIR = Path("C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/image_creater/outputs")
 
 # 生成設定
 IMAGE_SIZE = 1024 # 画像の最大辺サイズ (512, 768, 1024など8の倍数で指定) - 大きすぎるとVRAM不足になる可能性があるため注意

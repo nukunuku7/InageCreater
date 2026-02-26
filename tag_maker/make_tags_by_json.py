@@ -8,9 +8,9 @@ from pathlib import Path
 
 # ===== 設定 =====
 IMAGE_DIR = Path("C:/Users/nukunuku7/Pictures/iCloud Photos/Shared/2次元画像集") # 入力画像フォルダ
-MODEL_PATH = Path("C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/tag_maker/model/model-resnet_custom_v3.h5") # 学習済みモデルのパス
-TAGS_PATH = Path("C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/tag_maker/model/tags.txt") # タグ一覧のパス
-OUTPUT_DIR = Path("C:/Users/nukunuku7/.vscode/nukunuku/DeepDanbooru/dataset/maked_tags") # 出力フォルダ
+MODEL_PATH = Path("C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/tag_maker/model/model-resnet_custom_v3.h5") # 学習済みモデルのパス
+TAGS_PATH = Path("C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/tag_maker/model/tags.txt") # タグ一覧のパス
+OUTPUT_DIR = Path("C:/Users/nukunuku7/.vscode/nukunuku/ImageCreater/dataset/maked_tags") # 出力フォルダ
 
 IMAGE_SIZE = 512
 THRESHOLD_POSITIVE = 0.5
